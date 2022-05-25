@@ -1,3 +1,4 @@
+##Audiobookshelf Rename From Metadata
 This script generates a bash script which renames folders in an [Audiobookshelf](https://github.com/advplyr/audiobookshelf) Library based on metadata. It's currently set up to conform to my personal settings and preferences.
 
 Currently this is only tested on Linux and probably works on MacOS. It could be quickly made to work on a Windows machine with fairly minor tweaks to the constants and
@@ -5,7 +6,7 @@ Currently this is only tested on Linux and probably works on MacOS. It could be 
 f.write (f'mv "{root}" "{DELIMITER.join(path)}"\n')
 ```
 
-This could be the start of a useful ABS feature, but there are a number of issues that would need to be addressed.
+####This could be the start of a useful ABS feature, but there are a number of issues that would need to be addressed first.
 
 1. There are a number of sanity checks that are not necessary with my particular situation, but that need to be adressed before any sort of deployment
 1. - If any series name listed in metadata.abs contains `', ' or ' #'`, you can expect bad behavior.
