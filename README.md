@@ -1,6 +1,9 @@
-This script generates a bash script which renames folders in an Audiobookshelf Library based on metadata. It's currently set up to conform to my personal settings and preferences.
+This script generates a bash script which renames folders in an [Audiobookshelf](https://github.com/advplyr/audiobookshelf) Library based on metadata. It's currently set up to conform to my personal settings and preferences.
 
-Currently this is only tested on Linux and probably works on MacOS. It could be quickly made to work on a Windows machine with fairly minor tweaks to the constants and the ```f.write (f'mv "{root}" "{DELIMITER.join(path)}"\n')```python line.
+Currently this is only tested on Linux and probably works on MacOS. It could be quickly made to work on a Windows machine with fairly minor tweaks to the constants and
+```python
+f.write (f'mv "{root}" "{DELIMITER.join(path)}"\n')
+```
 
 This could be the start of a useful ABS feature, but there are a number of issues that would need to be addressed.
 
