@@ -13,4 +13,3 @@ f.write (f'mv "{root}" "{DELIMITER.join(path)}"\n')
 2. The entire structure of the program revolves around the assumption that metadata is set to be stored in folders alongside audiobooks.
 3. This should probably be rewritten in JavaScript, since the project doesn't currently use python, and there's nothing about this that couldn't be done with node.
 4. Instead of creating a script, it should verify the changes and then actually do the rename through the ABS interface. I'm using the bash script as an intermediary to accomplish this, but it's probably not a good solution for prod.
-5. 
