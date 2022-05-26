@@ -1,5 +1,14 @@
 ## Audiobookshelf Rename From Metadata
-This script generates a bash script which renames folders in an [Audiobookshelf](https://github.com/advplyr/audiobookshelf) Library based on metadata. It's currently set up to conform to my personal settings and preferences.
+This script generates a bash script which renames folders in an [Audiobookshelf](https://github.com/advplyr/audiobookshelf) Library based on metadata.
+
+## DO NOT USE THIS UNLESS YOU ARE ABSOLUTELY POSITIVE YOU UNDERSTAND WHAT YOU ARE DOING
+This script is currently set up to conform to my personal settings and preferences. Specifically it produces folder names in `TITLE - SUBTITLE {Narrator}` format. If the book is a part of one and only one series, it will prepend the book number, resulting in folders in `BOOK#. TITLE - SUBTITLE {Narrator}` format. If you're familiar with python, it shouldn't bee too hard to adjust it to your preferences.
+
+Notably, it does NOT currently move folders, so the assumption is that you already have your folders in their correct `LIBRARY/AUTHOR/SERIES(optional)/` locations. Or you can move them around afterwards.
+
+I HIGHLY recommend manually reviewing the output script before running it. This tool can absolutely cause chaos in your library if you aren't paying attention. I am not responsible for any lost or disorganized data as a result of your choice to use this script.
+
+## Current Status
 
 Currently this is only tested on Linux and probably works on MacOS. It could be quickly made to work on a Windows machine with fairly minor tweaks to the constants and
 ```python
